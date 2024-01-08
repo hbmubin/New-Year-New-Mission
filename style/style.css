@@ -350,7 +350,7 @@ button {
 .subscribeContainer {
   width: 1320px;
   height: 616px;
-  margin: 0 auto;
+  margin: 0 auto 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -382,19 +382,71 @@ button {
   font-family: Inter;
   font-size: 20px;
   font-weight: 700;
+  transition: 0.3s;
 }
-
+.subscribeBtn:hover {
+  background-color: rgb(254, 77, 77);
+}
 .subscribeInput input {
   width: 70%;
   outline: none;
   border: none;
   height: 100%;
-padding-left: 32px;
+  padding-left: 32px;
 }
-.subscribeInput input::placeholder{
-    color: #07021162;
-    font-family: Inter;
-    font-size: 20px;
-    font-weight: 400;
+.subscribeInput input::placeholder {
+  color: #07021162;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
 }
 /* SUBSCRIBE END */
+
+/* FOOTER START */
+.footer {
+  height: 610px;
+  background: #070211;
+  color: #fff;
+}
+.footerConatiner {
+}
+.footerText {
+  color: #fff;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 40px;
+}
+.line {
+  width: 100%;
+  background: #ffffff26;
+  height: 1px;
+}
+.footerRow1 {
+  height: 250px;
+  width: 100%;
+  position: relative;
+}
+.footerRow1Left {
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+.footerRow1Right {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+}
+.footerRow1 span {
+  display: inline-block;
+  transform: translateY(5px);
+  margin-right: 10px;
+}
+.footerRow2{
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+/* FOOTER END */
