@@ -160,6 +160,9 @@ button {
 .welcomeContent a:hover {
   background: #f00;
 }
+.welcomeImage2 {
+  max-width: 320px;
+}
 /* WELCOME END */
 
 /* VENUE START  */
@@ -204,15 +207,83 @@ button {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 .leftContent {
-  width: 33.33%;
+  /* width: 33.33%; */
 }
 .centerImageCircle {
-  width: 33.33%;
+  /* width: 33.33%; */
 }
 .rightContent {
-  width: 33.33%;
+  /* width: 33.33%; */
+}
+.leftContent h3 {
+  color: #f00;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+}
+.leftContent h2 {
+  color: #070211;
+  font-family: Merriweather;
+  font-size: 48px;
+  font-weight: 900;
+  margin-top: 16px;
+  margin-bottom: 22px;
+}
+.defaultPara {
+  color: #07021199;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+}
+.rightContent h1 {
+  color: #f00;
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.centerImageCircle {
+  width: 463px;
+  height: 463px;
+  border-radius: 50%;
+  border: 15px solid #f00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.centerImageCircle img {
 }
 /* COMMING SOON END */
+
+/* HOLYDAY START */
+.holydayContainer {
+  width: 1320px;
+  height: 986px;
+  margin: 120px auto 0;
+  position: relative;
+}
+.holydayContent h2 {
+  color: #070211;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+}
+.holydayContent {
+  text-align: center;
+}
+.holydayContent h1 {
+  color: #070211;
+  font-family: Merriweather;
+  font-size: 72px;
+  font-weight: 900;
+  margin-top: 16px;
+  margin-bottom: 28px;
+}
+.holydayContent h1 span {
+  color: #f00;
+}
+/* HOLYDAY END */
