@@ -263,7 +263,7 @@ button {
 .holydayContainer {
   width: 1320px;
   height: 986px;
-  margin: 120px auto 0;
+  margin: 120px auto;
   position: relative;
 }
 .holydayContent h2 {
@@ -274,6 +274,7 @@ button {
 }
 .holydayContent {
   text-align: center;
+  margin-bottom: 64px;
 }
 .holydayContent h1 {
   color: #070211;
@@ -286,4 +287,114 @@ button {
 .holydayContent h1 span {
   color: #f00;
 }
+.holydayBanner {
+  position: relative;
+  height: 660px;
+  width: 1320px;
+}
+.leftImage {
+  position: absolute;
+  right: 0;
+}
+.group44Align {
+  position: relative;
+}
+.group44Align::before {
+  content: "";
+  position: absolute;
+  left: -50%;
+  top: 0;
+  background: url("../resources/Group\ 44.png");
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 9;
+}
+.bottomFill {
+  position: absolute;
+  bottom: 0;
+  height: 230px;
+  width: 1320px;
+  background-color: #f00;
+  border-radius: 0 0 8px 8px;
+}
+.boxImage {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
 /* HOLYDAY END */
+
+/* PORTFOLIO START */
+.portfolioContainer {
+  width: 1320px;
+  height: 1160px;
+  margin: 0 auto 120px;
+}
+.portfolioContent h2 {
+  margin-top: 16px;
+  margin-bottom: 22px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+.row1 {
+  margin-bottom: 24px;
+  margin-top: 48px;
+}
+/* PORTFOLIO END */
+
+/* SUBSCRIBE START */
+.subscribeContainer {
+  width: 1320px;
+  height: 616px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: #ff00000d;
+}
+.subscribeContainer h2 {
+  margin-top: 40px;
+  margin-bottom: 22px;
+}
+.subscribeInput {
+  height: 72px;
+  width: 648px;
+  margin: 48px auto 0;
+  display: flex;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.subscribeBtn {
+  color: #fff;
+  background-color: #f00;
+  height: 100%;
+  width: 30%;
+  display: inline-block;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.subscribeInput input {
+  width: 70%;
+  outline: none;
+  border: none;
+  height: 100%;
+padding-left: 32px;
+}
+.subscribeInput input::placeholder{
+    color: #07021162;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+}
+/* SUBSCRIBE END */
