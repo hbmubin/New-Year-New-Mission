@@ -196,7 +196,7 @@ button {
   background-color: #f00;
 }
 .venueInnerContainer button a:hover {
-  background-color: rgb(254, 77, 77);
+  background-color: #fe4d4d;
 }
 /* VENUE END  */
 
@@ -208,15 +208,6 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-.leftContent {
-  /* width: 33.33%; */
-}
-.centerImageCircle {
-  /* width: 33.33%; */
-}
-.rightContent {
-  /* width: 33.33%; */
 }
 .leftContent h3 {
   color: #f00;
@@ -332,6 +323,12 @@ button {
   height: 1160px;
   margin: 0 auto 120px;
 }
+.portfolioContent h3 {
+  color: #f00;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+}
 .portfolioContent h2 {
   margin-top: 16px;
   margin-bottom: 22px;
@@ -343,6 +340,56 @@ button {
 .row1 {
   margin-bottom: 24px;
   margin-top: 48px;
+}
+.portfolioImageMask {
+  width: 424px;
+  height: 450px;
+  transition: 0.3s;
+  position: relative;
+}
+.portfolioImageMask img {
+  height: 100%;
+  width: 100%;
+}
+.portfolioImageMask:hover {
+  transform: scale(1.05);
+}
+.portfolioImageMask:hover img {
+  filter: blur(3px);
+}
+.imageInner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 330px;
+  width: 300px;
+  border-radius: 16px;
+  background-color: #00000038;
+  opacity: 0;
+  transition: 0.5s;
+  text-align: center;
+}
+.imageInner a {
+  background-color: #f00;
+  transition: 0.3s;
+}
+.imageInner a:hover {
+  background-color: rgb(199, 0, 0);
+}
+.imageInner h2 {
+  margin-bottom: 32px;
+  color: #ffffffcc;
+  font-family: Merriweather;
+  font-size: 48px;
+  font-weight: 900;
+}
+.portfolioImageMask:hover .imageInner {
+  opacity: 1;
 }
 /* PORTFOLIO END */
 
@@ -442,11 +489,33 @@ button {
   transform: translateY(5px);
   margin-right: 10px;
 }
-.footerRow2{
-    height: 160px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
+.footerRow2 {
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.footerRow2 img {
+  transition: 0.3s;
+  opacity: 0.7;
+}
+.footerRow2 img:hover {
+  opacity: 1;
+}
+.footerRow3 {
+  height: 200px;
+  width: 100%;
+  position: relative;
+}
+.footerRow3Left {
+  position: absolute;
+  left: 0;
+  bottom: 50%;
+}
+.footerRow3Right {
+  position: absolute;
+  right: 0;
+  bottom: 50%;
 }
 /* FOOTER END */
